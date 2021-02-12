@@ -1,0 +1,23 @@
+<header class='site-header'>
+  <a href="/"> {{ 'general.shop.title' | t }} </a>
+  
+  <div class='header-links'>
+    {% include 'nav-list', handle: 'main-menu' %}
+  </div>
+
+  <a href='/search'>Search</a>
+
+  {% include 'currency-picker' %}
+
+  <a href="/cart"> {{ 'cart.button.count_html' | t: itemCount: cart.item_count }} </a>
+
+  {% if shop.customer_accounts_enabled %}
+    {% if customer %}
+      <a href="/account">account</a>
+      {{ 'log out'  | customer_logout_link }}
+    {% else %}
+      {{ 'log in ' | customer_login_link }}
+      {{ 'register' | customer_register_link }}
+    {% endif %}
+  {% endif %}
+</header>
