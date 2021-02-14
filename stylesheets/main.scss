@@ -1,0 +1,17 @@
+// Global Styles
+@import "global/reset"; // reset browser default style settings
+@import "global/settings"; // app style settings
+@import "global/colors"; // color scheme
+@import "global/type"; // default typography settings
+@import "global/functions"; // sass functions
+@import "global/mixins"; // sass mixins
+@import "global/utils"; // helpful classes
+@import "global/base"; // default repeating styles
+
+// Libraries
+@import "libraries/slick";
+
+// Snippets
+// Sections
+// Templates
+// Overrides

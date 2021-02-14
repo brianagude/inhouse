@@ -154,7 +154,6 @@ $(document).ready(function(){
     }
   }
 
-
   productForm.init();
 
 

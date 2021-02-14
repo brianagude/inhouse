@@ -1,0 +1,25 @@
+button[type="submit"],
+.btn {
+  @include reset-input;
+  display: inline-block;
+  width: auto;
+  padding: $multiplier * 2;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.33;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background: lighten($black, 10%);
+  }
+
+  &:hover {
+    color: $white;
+  }
+}

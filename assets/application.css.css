@@ -228,6 +228,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -251,6 +252,7 @@ body {
 .page-section {
   padding: 40px 16px;
 }
+
 button[type=submit],
 .btn {
   appearance: none;
@@ -276,15 +278,18 @@ button[type=submit],
   font-size: 18px;
   line-height: 1.33;
 }
+
 button[type=submit]:disabled,
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 button[type=submit]:not(:disabled):hover,
 .btn:not(:disabled):hover {
   background: #1a1a1a;
 }
+
 button[type=submit]:hover,
 .btn:hover {
   color: #fff;
