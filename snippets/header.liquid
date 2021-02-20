@@ -9,7 +9,7 @@
 
   {% include 'currency-picker' %}
 
-  <a href="/cart"> {{ 'cart.button.count_html' | t: itemCount: cart.item_count }} </a>
+  <a href="/cart" class="js-cart-link"> {{ 'cart.button.count_html' | t: itemCount: cart.item_count }} </a>
 
   {% if shop.customer_accounts_enabled %}
     {% if customer %}

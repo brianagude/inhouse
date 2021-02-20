@@ -281,13 +281,9 @@ button[type=submit]:disabled,
   opacity: 0.5;
   cursor: not-allowed;
 }
-button[type=submit]:not(:disabled):hover,
-.btn:not(:disabled):hover {
-  background: #1a1a1a;
-}
 button[type=submit]:hover,
 .btn:hover {
-  color: #fff;
+  background: transparent;
 }
 
 /* Slider */
@@ -387,4 +383,47 @@ button[type=submit]:hover,
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+#mini-cart {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  background: #fff;
+  padding: 0 16px;
+  max-width: 500px;
+  width: 100%;
+  z-index: 2;
+}
+#mini-cart .mini-cart-contents .cart-totals,
+#mini-cart .mini-cart-contents .currency-note {
+  padding-left: 80px;
+  text-align: left;
+}
+#mini-cart .mini-cart-contents .update-button {
+  display: none;
+}
+#mini-cart .mini-cart-contents .subtotal-line {
+  border-bottom: 0;
+}
+
+#no-click {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+html.mini-cart-open {
+  height: 100vh;
+  overflow: hidden;
+}
+html.mini-cart-open #mini-cart,
+html.mini-cart-open #no-click {
+  display: block;
 }
